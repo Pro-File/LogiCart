@@ -1,0 +1,80 @@
+/* CSS */
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+:root{
+    --heading-font: 'Amaranth', sans-serif;
+    --sub-heading: 'Farro', sans-serif;
+    --para-font: 'Merienda One', cursive;
+    --btn-font: 'Crete Round', serif;
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semi-bold: 600;
+    --bold: 700;
+    --extra-bold: 800;
+    --dark-blue: #2C3E50;
+    --grey: #95A5A6;
+    --black: rgb(0, 0, 0);
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(4, 100vh);
+    background: #ffff;
+}
+/* page-1 */
+.page-1{
+    flex-flow: column;
+    background: var(--dark-blue);
+    color: var(--grey);
+}
+.page-1>h1{
+    font-size: 5.5rem;
+    padding: 1rem 0rem;
+    font-family: var(--heading-font);
+}
+.page-1>h3{
+    font-size: 2.7rem;
+    font-weight: lighter;
+    padding: 0rem 0rem;
+    font-family: var(--sub-heading);
+}
+.page-1>p{
+    font-size: 2rem;
+    padding: 4rem 20rem;
+    text-align: center;
+    font-family: var(--para-font);
+}
+
+.page-1>button{
+    font-size: 1.8rem;
+    font-family: var(--btn-font);
+    padding: 0.8rem 1.5rem;
+    background: transparent;
+    border: 2px solid var(--grey);
+}
+/* page-2 */
+.page-2{
+    background: var(--grey);
+}
+
+/* page-3 */
+.page-3{
+    background: grey;
+}
+
+/* page-4 */
+.page-4{
+    background: lightblue;
+}
